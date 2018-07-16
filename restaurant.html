@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,13 +17,13 @@
   <!-- Beginning header -->
   <header>
     <!-- Beginning nav -->
-    <nav>
+    <nav aria-label="Breadcrumb">
       <h1><a href="/" tabindex="-1">Restaurant Reviews</a></h1>
     </nav>
     <!-- Beginning breadcrumb -->
-    <ul id="breadcrumb" aria-label="Navigation breadcrumb">
-      <li><a href="/">Home</a></li>
-    </ul>
+      <ul id="breadcrumb">
+        <li><a href="/" aria-current="page">Home</a></li>
+      </ul>
     <!-- End breadcrumb -->
     <!-- End nav -->
   </header>
@@ -32,13 +32,13 @@
   <!-- Beginning main -->
   <main id="maincontent">
     <!-- Beginning map -->
-    <section id="map-container">
+    <section id="map-container" role="contentinfo" aria-label="Map Guide">
       <div id="map" role="application" aria-hidden="true" aria-labelledby="map" aria-describedby="map-guide"></div>
       <div hidden id="map-guide">A map which shows restaurant locations</div>
     </section>
     <!-- End map -->
     <!-- Beginning restaurant -->
-    <section id="restaurant-container">
+    <section id="restaurant-container" role="contentinfo" aria-label="Restaurant Information">
       <h1 id="restaurant-name" aria-label="Name of the restaurant"></h1>
       <img id="restaurant-img" aria-label="Actual picture of the restaurant">
       <p id="restaurant-cuisine" aria-label="Cuisine offered by the restaurant"></p>
@@ -47,7 +47,7 @@
     </section>
     <!-- end restaurant -->
     <!-- Beginning reviews -->
-    <section id="reviews-container">
+    <section id="reviews-container" role="contentinfo" aria-label="Review Information">
       <ul id="reviews-list" aria-label="List of reviews"></ul>
     </section>
     <!-- End reviews -->
@@ -55,7 +55,7 @@
   <!-- End main -->
 
   <!-- Beginning footer -->
-  <footer id="footer">
+  <footer id="footer" role="contentinfo" aria-label="Copyright Information">
     Copyright (c) 2018 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
   </footer>
   <!-- End footer -->

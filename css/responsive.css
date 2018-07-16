@@ -75,10 +75,11 @@
     padding: 0;
   }
 
+  #reviews-list li p:nth-child(1) {
+    width: 100% !important;
+  }
+
   .inside #footer {
-    position: relative;
-    width: 100%;
-    top: 130px;
-    padding: 25px 0 25px;
+    position: relative !important;
   }
 }

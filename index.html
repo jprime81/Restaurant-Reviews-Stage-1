@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,17 +15,17 @@
 
 <body>
   <header>
-    <nav>
+    <nav aria-label="Navheader">
       <h1><a href="/" tabindex="-1">Restaurant Reviews</a></h1>
     </nav>
   </header>
 
   <main id="maincontent">
-    <section id="map-container">
+    <section id="map-container" role="contentinfo" aria-label="Map Information">
       <div id="map" role="application" aria-hidden="true" aria-labelledby="map" aria-describedby="map-info"></div>
       <div hidden id="map-info">A map which shows restaurant locations</div>
     </section>
-    <section>
+    <section role="contentinfo" aria-label="Filter Options">
       <div class="filter-options">
         <select id="neighborhoods-select" name="neighborhoods" aria-label="Select to filter by neighborhood" tabindex="1" onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
@@ -35,7 +35,7 @@
         </select>
       </div>
     </section>
-    <section class="container">
+    <section class="container" role="contentinfo" aria-label="Filter Results">
       <div class="col">
         <h2>Filter Results</h2>
         <ul id="restaurants-list" aria-label="List of restaurants" tabindex="3"></ul>
@@ -46,7 +46,7 @@
   <script type="application/javascript" charset="utf-8" src="js/dbhelper.js"></script>
   <script type="application/javascript" charset="utf-8" src="js/main.js"></script>
 
-  <footer id="footer">
+  <footer id="footer" role="contentinfo" aria-label="Copyright Information">
     Copyright (c) 2018 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
   </footer>
 

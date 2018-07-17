@@ -27,10 +27,10 @@
     </section>
     <section role="contentinfo" aria-label="Filter Options">
       <div class="filter-options">
-        <select id="neighborhoods-select" name="neighborhoods" aria-label="Select to filter by neighborhood" tabindex="1" onchange="updateRestaurants()">
+        <select id="neighborhoods-select" name="neighborhoods" aria-label="Select to filter by neighborhood" tabindex="0" onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
         </select>
-        <select id="cuisines-select" name="cuisines" aria-label="Select to filter by cuisine" tabindex="2" onchange="updateRestaurants()">
+        <select id="cuisines-select" name="cuisines" aria-label="Select to filter by cuisine" tabindex="0" onchange="updateRestaurants()">
           <option value="all">All Cuisines</option>
         </select>
       </div>
@@ -38,7 +38,7 @@
     <section class="container" role="contentinfo" aria-label="Filter Results">
       <div class="col">
         <h2>Filter Results</h2>
-        <ul id="restaurants-list" aria-label="List of restaurants" tabindex="3"></ul>
+        <ul id="restaurants-list" aria-label="List of restaurants" tabindex="0"></ul>
       </div>
     </section>
   </main>

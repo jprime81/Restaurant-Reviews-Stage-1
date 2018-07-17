@@ -42,15 +42,8 @@
     padding: 10px 5px 16px;
   }
 
-  .inside #map-container {
-    height: 400px;
-    position: relative;
-    top: 120px;
-    width: 100%;
-  }
-
   #restaurant-img {
-    width: 80%;
+    width: 100%;
     border-radius: 13px 0 13px 0;
     display: block;
     margin-left: auto;
@@ -63,12 +56,9 @@
     text-align: center;
   }
 
-  #restaurant-container, #reviews-container {
-    width: 100%;
-    padding: 0;
-    margin: 10px 0 10px;
+  #restaurant-container,
+  #reviews-container {
     position: relative;
-    top: 120px;
   }
 
   #reviews-list li {

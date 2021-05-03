@@ -1,0 +1,11 @@
+---
+application:
+  name: "restaurant-reviews-stage-1"
+  project: "testNew"
+  organization: "QoveryCommunity"
+routers:
+- name: "main-restaurant-reviews-stage-1"
+  routes:
+  - application_name: "restaurant-reviews-stage-1"
+    paths:
+    - "/*"
